@@ -1,0 +1,80 @@
+<html>
+    <head> 
+        <title> Suduko </title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="StyleSheet" href="Style.css">
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navbar">
+              <h3 class="title"> Suduko </h3>
+              <nav>
+                <ul id="menuList">
+                    <li><a href="Suduko.html">Game</a></li>
+                    <li><a href="Rules.html">Rules</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                  </li>
+                </ul>
+              </nav>
+              <img src="Images\Menu-Icon.jpg"  alt="menu-icon" class="menu-icon" onclick="togglemenu()">
+            </div>
+          </div>
+        <div class="container-fluid">
+            <div class=row>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <img src="Images\img.jpg" alt="img" class="img-rounded img-responsive img_home">
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <div class="about">
+                        <h3 class="about1">About Me</h3> 
+                        <div class="text">
+                        <p> Hello! I'm Sudha, a passionate computer science graduate with a Master's degree in Computer Science. Currently focused on 
+                        expanding my skills in Python full-stack development. My goal is to integrate my knowledge of front-end and back-end technologies 
+                        to create seamless user experiences and impactful digital solutions.I am fortunate to be part of Hejex Technology, where I am actively advancing my knowledge
+                        and skills under their guidance.
+                        </p> 
+                        <p> To further enrich my front-end development skills,<span id="text2"> I have embarked on a project to create a Sudoku game website using JavaScript. 
+                        </span>Sudoku, with its intricate logic and user interaction components, serves as an excellent platform to 
+                        deepen my understanding of JavaScript frameworks, DOM manipulation, and interactive web applications.</p>
+                        <p> Through my Sudoku game website project, I aim to showcase not only my technical abilities but also my commitment to continuous learning and professional growth. I am excited to 
+                        leverage JavaScript to create a captivating and user-friendly experience that challenges and engages users in solving puzzles.
+                        </p>
+                        <p> Thank you for visiting my page, and I look forward to sharing more about my journey and projects with you. </p>
+                        <p><span id="text2">  Kindly, Read the rules for Suduko.<a href ="Rules.html"> Click to Read</a> </span></p>
+                        <p><span id="text2">  And click to begin the game. <a href="Suduko.html"> Click to go</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+       
+
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight ="0px;";
+            menuList.style.maxWidth ="0px;";
+            function togglemenu()
+            {
+              if(menuList.style.maxHeight == "0px")
+              {
+              menuList.style.maxHeight = "330px";
+              }
+              else
+              {
+              menuList.style.maxHeight = "0px";
+              }
+            }
+          </script>    
+                
+                    
+                
+            
+        
+        
+    </body>
+</html>
