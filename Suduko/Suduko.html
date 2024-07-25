@@ -1,0 +1,90 @@
+<html>
+    <head> 
+        <title> Game </title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="StyleSheet" href="Style.css">
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navbar">
+              <h3 class="title"> Suduko </h3>
+              <nav>
+                <ul id="menuList">
+                    <li><a href="Suduko.html">Game</a></li>
+                    <li><a href="Rules.html">Rules</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                  </li>
+                </ul>
+              </nav>
+              <img src="Images\Menu-Icon.jpg"  alt="menu-icon" class="menu-icon" onclick="togglemenu()">
+            </div>
+          </div> 
+        
+          <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 final_game">
+                    <div class="err">
+                        <h2>Errors: <span id="errors">5</span></h2>
+                    </div>
+                    
+                    <div class="tmm">
+                        <h2>Time:<span id="timer"> 05:00 </span></h2>
+                    </div>
+                    <span id="timer_end"></span>
+                    <div class="err_text">
+                        <span id="errors1"> </span>
+                     </div>
+                    <span id="errors2"> </span>
+                    <div id="board"></div>
+                    <br><br>
+                    <div id="digits"></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 final_game">
+                    <div class="instruct">
+                        <h3 class="instruct_head">Instruction:</h3> 
+                        <div class="instruct_text">
+
+                        <p> Sudoku is played on a 9x9 grid, divided into 3x3 subgrids called regions or blocks.
+                        The grid must be filled with digits from 1 to 9.
+                            <li>Once you click the digits from 1 to 9, the timer will start.</li><br/>
+                            <li>If you mismatch a number with the solution, it will reduce count as an error.</li><br/>
+                            <li>Errors will deduct from the total; if you reach 0 errors, the game ends.</li><br/>
+                            <li>If you do not finish the game before the timer runs out, the game ends.</li><br/>
+                            Let's Begin the Game!
+
+
+
+
+                        </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <script src="game.js"></script>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight ="0px;";
+            menuList.style.maxWidth ="0px;";
+            function togglemenu()
+            {
+              if(menuList.style.maxHeight == "0px")
+              {
+              menuList.style.maxHeight = "330px";
+              }
+              else
+              {
+              menuList.style.maxHeight = "0px";
+              }
+            }
+          </script>
+    </body>
+</html>

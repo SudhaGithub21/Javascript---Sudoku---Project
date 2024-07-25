@@ -1,0 +1,152 @@
+<html>
+    <head> 
+        <title> Game </title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="StyleSheet" href="Style.css">
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navbar">
+              <h3 class="title"> Suduko </h3>
+              <nav>
+                <ul id="menuList">
+                    <li><a href="Suduko.html">Game</a></li>
+                    <li><a href="Rules.html">Rules</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                  </li>
+                </ul>
+              </nav>
+              <img src="Images\Menu-Icon.jpg"  alt="menu-icon" class="menu-icon" onclick="togglemenu()">
+            </div>
+          </div>
+        
+                                
+                  
+        <div class="container-fluid">
+            <div class=row>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <img src="Images\sudo_img.jpg" alt="img" class="img-rounded img-responsive img_sudo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+            
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    
+                        <h3 class="Rules1">Suduko Rule No 1: Use Numbers 1-9</h3> 
+                        
+                        <p class="text3"> A Sudoku puzzle is played on a 9x9 grid, which means it has 81 cells in total (9 rows and 9 columns).
+                            This grid is further divided into nine 3x3 subgrids, also called regions or blocks. 
+                            Each subgrid consists of 9 cells arranged in a 3x3 formation.
+                            The objective of Sudoku is to fill each cell of the 9x9 grid with a number from 1 to 9.ith a number from 1 to 9.
+                            These digits must be placed in such a way that each row, each column, and each 3x3 subgrid contains each digit exactly once. 
+                            In each row of the 9x9 grid, you must have the numbers 1 through 9 appearing once and only once.
+                            In each column of the 9x9 grid, the numbers 1 through 9 must also appear exactly once.
+                            Within each 3x3 subgrid, the numbers 1 through 9 should appear exactly once.
+                        </p> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    
+                        <h3 class="Rules1">Suduko Rule No 2: No Repetition</h3> 
+                        
+                        <p class="text3"> In Sudoku, the rule of no repetition forms the core of the puzzle's challenge and logic. 
+                            This means that no row can contain the same number more than once, no column can repeat a number, and each 3x3 subgrid must also have all nine digits without repetition.
+                            For instance, placing a '1' in a particular row means that '1' cannot appear in any other cell of that row. Similarly, 
+                            placing a '5' in a specific column precludes placing another '5' in any other cell of that column. 
+                            This rule forces players to think ahead and strategize their moves to maintain the puzzle's integrity and ultimately 
+                            arrive at a unique solution where every cell in the grid is correctly filled according to the rules.
+                        </p> 
+                </div>
+            </div>
+        </div>
+                
+        <div class="container-fluid">
+            <div class="row">
+            
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    
+                        <h3 class="Rules1">Suduko Rule No 3: Logical Reduction</h3> 
+                        
+                        <p class="text3"> Logical deduction in Sudoku involves using a systematic approach to fill in numbers based on the game's rules.
+                        Players start with given numbers and strategically place digits from 1 to 9 in empty cells across rows, columns, and 3x3 subgrids. 
+                        Techniques include elimination, where candidates are ruled out based on existing numbers in the same row, column, or subgrid. 
+                        Sole candidate and unique possibility methods identify cells with only one viable number left, while subset exclusion pinpoints 
+                        groups of cells where specific numbers must appear, excluding them from others in the unit. More complex strategies like chains and 
+                        loops trace patterns of possible placements, ensuring every number fits precisely without guessing, making Sudoku a challenging yet 
+                        rewarding exercise in logical reasoning.
+                        </p> 
+                </div>
+              </div>
+            </div>  
+            <div class="container-fluid">
+                <div class="row">
+                
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        
+                            <h3 class="Rules1">Suduko Rule No 4: Completion</h3> 
+                            
+                            <p class="text3">Every well-constructed Sudoku puzzle has a unique solution that can be reached through pure 
+                                logical deduction. Guessing should not be necessary to solve a Sudoku puzzle.The puzzle is considered 
+                                solved when all 81 cells of the grid are filled with digits from 1 to 9, adhering to the rules of 
+                                non-repetition across rows, columns, and subgrids.While the standard Sudoku uses a 9x9 grid, 
+                                there are variations such as 4x4, 6x6, 12x12, and others. The rules generally remain the same,
+                                 with the grid size and number range adjusted accordingly.
+                            </p> 
+                    </div>
+                  </div>
+                </div>  
+                <div class="container-fluid Footer">
+                    <div class="row">
+                    
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                            
+                                <h3 class="txt">Suduko</h3> 
+                                
+                                <h3 class="foot_text1"><a href="Rules.html">How to Play</a></h3>
+                                <h3 class="foot_text2"><a href="Suduko.html">Play a Game</a></h3> 
+                                <h3 class="foot_text3"><a href="index.html">About Me</a></h3>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                            
+                                <h3 class="txt1">Projects</h3> 
+                                
+                                <h3 class="foot_text1"><a href="https://github.com/SudhaGithub21">Click: github.com/SudhaGithub21</a></h3>
+                               
+                
+                        </div>
+                      </div>
+                    </div>  
+                
+                    <script>
+                        var menuList = document.getElementById("menuList");
+                        menuList.style.maxHeight ="0px;";
+                        menuList.style.maxWidth ="0px;";
+                        function togglemenu()
+                        {
+                          if(menuList.style.maxHeight == "0px")
+                          {
+                          menuList.style.maxHeight = "330px";
+                          }
+                          else
+                          {
+                          menuList.style.maxHeight = "0px";
+                          }
+                        }
+                      </script>
+        
+
+    </body>
+    </html>
